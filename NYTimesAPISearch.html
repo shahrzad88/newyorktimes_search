@@ -36,10 +36,10 @@
                 <label>Number of Records to Retrieve</label>
             </div>
             <div class="row-12">
-                <select>
+                <select id = "records-number">
                     <option value="1">1</option>
                     <option value="5">5</option>
-                    <option value="10">10</option>
+                    <option value="10" selected="selected">10</option>
                 </select>
             </div>
 
@@ -47,13 +47,13 @@
                 <label>Start Year (Optional):</label>
             </div>
             <div>
-                <input id = "start-date" type="date">
+                <input id = "start-year" type="number">
             </div>
             <div class="row-12">
                 <label>End Year (Optional):</label>
             </div>
             <div class="row-12">
-                <input id = "end-date" type="date">
+                <input id = "end-year" type="number">
             </div>
             <div class="row-12">
                 <button id = "search-button" type="submit" class="btn btn-light"> <i class="fas fa-search"></i>Search</button>
@@ -66,7 +66,7 @@
             <div id = "show-results"></div>
         </div>
     </div>
-    <script type="text/javascript" src="search.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
 </body>
 
 </html>
