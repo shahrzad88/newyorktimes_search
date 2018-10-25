@@ -1,0 +1,9 @@
+.jtcolor{
+    background-color: coral;
+    color: white;
+    text-align: center;
+}
+
+select, input{
+    width: 100%;
+}
