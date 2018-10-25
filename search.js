@@ -8,7 +8,6 @@ $(document).ready(function() {
         var limit = 0;
         var start_year = "";
         var end_year = "";
-        var new_date = new Date();
         user_input = $("#searchTerm").val();
         var params = {'api-key': api_key};
         if (user_input != "") {
@@ -16,12 +15,13 @@ $(document).ready(function() {
         }
         var selectedOption = $("#records-number option:selected");
         limit = selectedOption.val();
+        console.log(limit);
         if ($("#start-year").val() != "") {
-            start_year = new_date.setFullYear($("#start-year").val(), 01, 01);
+            start_year = new Date(parseInt($("#start-year").val()), 0, 1); //Jan 1st
             params.begin_date = start_year;
         }
         if ($("#end-year").val() != "") {
-            end_year = new_date.setFullYear($("#end-year").val(), 01, 01);
+            end_year = new Date(parseInt($("#end-year").val()), 11, 29); // Dec 29th
             params.end_date = end_year;
         }
         

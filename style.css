@@ -7,3 +7,13 @@
 select, input{
     width: 100%;
 }
+
+#main-form{
+    border: solid;
+    border-color: salmon;
+}
+
+#articles{
+    border: solid;
+    border-color: black;
+}
